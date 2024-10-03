@@ -1,0 +1,43 @@
+.input {
+    height: 50px;
+    background-color: white;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+
+    input {
+        width: 100%;
+        border: none;
+        outline: none;
+        color: #2f2d52;
+        font-size: 18px;
+
+
+        &::placeholder {
+            color: lightgray;
+        }
+    }
+
+    .send {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+
+        img {
+            width: 20px;
+            height: 20px;
+
+        }
+
+    }
+    button{
+        border: none;
+        padding: 10px 15px;
+        background-color: #5a7ef4;
+        color: lightgrey;
+    }
+}

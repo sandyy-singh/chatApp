@@ -1,0 +1,554 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+
+
+}
+
+.affi-signUpBg {
+    z-index: -1;
+    position: absolute;
+    height: 100vh;
+    width: 100%;
+    background: url("../assets/bb.gif") no-repeat 0 0;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+}
+
+.affi-frame {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.affi-part2 {
+    position: relative;
+    top: 90px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 500px;
+    height: 550px;
+    box-shadow: -30px -30px 100px 10px rgba(255, 255, 255, 0.2), 30px 40px 100px 10px rgba(0, 0, 0, 0.25);
+    border-radius: 40px;
+    background: rgba(255, 255, 255, 0.60);
+    box-shadow: -30px -30px 100px 10px rgba(255, 255, 255, 0.30), 30px 40px 100px 10px rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(18px);
+
+    >.affi-h5 {
+        color: rgba(53, 107, 57, 0.9);
+        text-shadow: 7px 7px 10px 0px rgba(0, 0, 0, 0.5), -7px -7px 10px 0px rgba(255, 255, 255, 0.25);
+        font-size: 21px;
+        font-family: Poppins;
+        font-weight: 700;
+        position: relative;
+        bottom: 50px;
+        text-transform: capitalize;
+        &:hover {
+            color: rgba(23, 71, 26, 0.9); 
+        }
+    }
+
+    >.affi-form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        >.fnamelname {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            width: 380px;
+            height: 40px;
+            margin-bottom: 5px;
+
+            justify-content: space-between;
+
+            >.firstName {
+                display: flex;
+                flex-direction: column;
+
+
+
+                >.affi-label1 {
+                    position: relative;
+                    left: 7px;
+                    color: rgba(0, 0, 0, 0.70);
+                    font-size: 14px;
+                    font-family: Poppins;
+                    font-weight: 700;
+                }
+
+                >.inputFirst {
+                    position: relative;
+                    border-radius: 50px;
+                    display: flex;
+                    height: 40px;
+                    padding: 18px;
+                    align-items: center;
+                    border: 1px solid rgba(0, 0, 0, 0.50);
+                    background: rgba(255, 255, 255, 0.85);
+                    font-size: 15px;
+                    margin-bottom: 1px;
+                    font-family: Poppins;
+                    width: 170px;
+                    text-transform: capitalize;
+                    outline: none;
+
+                    &:hover {
+                        border: 2px solid rgba(95, 93, 93, 0.5);
+                    }
+                    &::placeholder {
+                        color: lightgray;
+                    }
+
+                }
+            }
+
+            >.lastName {
+                display: flex;
+                flex-direction: column;
+
+                >.affi-label2 {
+                    position: relative;
+                    left: 7px;
+                    color: rgba(0, 0, 0, 0.70);
+                    font-size: 14px;
+                    font-family: Poppins;
+                    font-weight: 700;
+
+                }
+
+                >.inputSecond {
+                    position: relative;
+                    border-radius: 50px;
+                    display: flex;
+                    height: 40px;
+                    padding: 18px;
+                    align-items: center;
+                    border: 1px solid rgba(0, 0, 0, 0.50);
+                    background: rgba(255, 255, 255, 0.85);
+                    font-size: 15px;
+                    margin-bottom: 1px;
+                    font-family: Poppins;
+                    width: 170px;
+                    text-transform: capitalize;
+                    outline: none;
+
+                    &:hover {
+                        border: 2px solid rgba(95, 93, 93, 0.5);
+                    }
+                    &::placeholder {
+                        color: lightgray;
+                    }
+                }
+
+            }
+        }
+
+        >.affi-label3 {
+            position: relative;
+            right: 132px;
+            top: 3px;
+            color: rgba(0, 0, 0, 0.70);
+            font-size: 14px;
+            font-family: Poppins;
+            font-weight: 700;
+        }
+
+        >.affi-label4 {
+            position: relative;
+            right: 136px;
+            top: 3px;
+            color: rgba(0, 0, 0, 0.70);
+            font-size: 14px;
+            font-family: Poppins;
+            font-weight: 700;
+        }
+
+        >.affi-label5 {
+            position: relative;
+            right: 150px;
+            top: 3px;
+            color: rgba(0, 0, 0, 0.70);
+            font-size: 14px;
+            font-family: Poppins;
+            font-weight: 700;
+        }
+
+        >.affi-label6 {
+            position: relative;
+            right: 65px;
+            top: 3px;
+            color: rgba(0, 0, 0, 0.70);
+            font-size: 14px;
+            font-family: Poppins;
+            font-weight: 700;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+        }
+
+        >input {
+            margin-top: 10px;
+            width: 380px;
+            border-radius: 50px;
+            display: flex;
+            height: 40px;
+            padding: 18px;
+            align-items: center;
+            border: 1px solid rgba(0, 0, 0, 0.50);
+            background: rgba(255, 255, 255, 0.85);
+            font-size: 15px;
+            margin-bottom: 1px;
+            font-family: Poppins;
+            text-transform: capitalize;
+            outline: none;
+
+            &:hover {
+                border: 2px solid rgba(95, 93, 93, 0.5);
+            }
+
+            &::placeholder {
+                color: lightgray;
+            }
+        }
+
+        .affi-moNumber {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+
+
+            >.affi-countryCode {
+                width: 60px;
+                height: 40px;
+                border: 1px solid rgba(0, 0, 0, 0.50);
+                align-items: center;
+                border-radius: 50px 0 0 50px;
+                padding-left: 15px;
+                margin-top: 10px;
+                font-family: Poppins;
+                outline: none;
+
+                &:hover {
+                    border: 2px solid rgba(95, 93, 93, 0.5);
+                }
+                &::placeholder {
+                    color: lightgray;
+                }
+
+            }
+
+            >.affi-mobileNumber {
+                width: 320px;
+                height: 40px;
+                border: 1px solid rgba(0, 0, 0, 0.50);
+                align-items: center;
+                border-radius: 0px 50px 50px 0px;
+                padding: 10px;
+                margin-top: 10px;
+                font-size: 15px;
+                font-family: Poppins;
+                text-transform: capitalize;
+                outline: none;
+
+                &:hover {
+                    border: 2px solid rgba(95, 93, 93, 0.5);
+                }
+                &::placeholder {
+                    color: lightgray;
+                }
+            }
+        }
+        .error{
+            color: red;
+            padding: 3px;
+        }
+
+        .affi-btn1 {
+            display: flex;
+            width: 200px;
+            height: 45px;
+            font-family: Poppins;
+            align-items: center;
+            justify-content: center;
+            margin-top: 20px;
+            border-radius: 60px;
+            background: #487750;
+            border: none;
+            color: #FFF;
+            font-size: 17px;
+            font-weight: 700;
+            cursor: pointer;
+
+            &:hover {
+                opacity: 0.8;
+
+            }
+
+
+        }
+
+
+
+
+    }
+
+    .affi-para {
+        font-size: 13px;
+        position: relative;
+        top: 15px;
+        font-family: 'Poppins', sans-serif;
+        font-style: normal;
+
+        >.affi-link {
+            font-size: 13px;
+            color: rgb(104, 112, 225);
+            font-family: 'Poppins', sans-serif;
+            font-style: normal;
+        }
+    }
+
+
+
+}
+
+
+@media screen and (max-width:620px) {
+
+
+    .affi-part2 {
+        width: 340px;
+        height: 500px;
+
+        >.affi-h5 {
+            margin-top: 10px;
+        }
+
+
+        >.affi-form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+
+            >.fnamelname {
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                justify-content: space-between;
+                width: 280px;
+
+                >.firstName {
+
+                    >.affi-label1 {
+                        position: relative;
+
+                        color: rgba(0, 0, 0, 0.70);
+                        font-size: 14px;
+                        font-family: Poppins;
+                        font-weight: 700;
+                        width: 90px;
+
+                    }
+
+                    >.inputFirst {
+
+                        width: 120px;
+                        height: 35px;
+                        font-size: 12px;
+                    }
+                }
+
+                >.lastName {
+                    >.affi-label2 {
+                        position: relative;
+
+                        color: rgba(0, 0, 0, 0.70);
+                        font-size: 14px;
+                        font-family: Poppins;
+                        font-weight: 700;
+                        width: 90px;
+
+                    }
+                    >.inputSecond {
+                        width: 120px;
+                        height: 35px;
+                        font-size: 12px;
+                    }
+                }
+            }
+
+            >.affi-label3 {
+                position: relative;
+                right: 83px;
+            }
+            >.affi-label4 {
+                position: relative;
+                right: 87px;
+            }
+            >.affi-label5 {
+                position: relative;
+                right: 117px;
+            }
+            >.affi-label6 {
+                position: relative;
+                right: 110px;
+            }
+            >input {
+                width: 280px;
+                height: 35px;
+                margin-top: 6px;
+                font-size: 12px;
+            }
+            .affi-moNumber {
+                display: flex;
+                flex-direction: row;
+                align-items: flex-end;
+                >.affi-countryCode {
+                    width: 60px;
+                    height: 35px;
+                    border: 1px solid rgba(0, 0, 0, 0.50);
+                    margin-top: 6px;
+                    font-size: 12px;
+                }
+                >.affi-mobileNumber {
+                    width: 220px;
+                    height: 35px;
+                    border: 1px solid rgba(0, 0, 0, 0.50);
+                    margin-top: 6px;
+                    font-size: 12px;
+                }
+            }
+            .affi-btn1 {
+                display: flex;
+                width: 175px;
+                height: 35px;
+                align-items: center;
+                justify-content: center;
+                margin-top: 10px;
+            }
+        }
+    }
+}
+
+
+@media screen and (max-width:280px) {
+
+
+    .affi-part2 {
+        width: 270px;
+        height: 450px;
+
+        >.affi-h5 {
+            margin-top: 10px;
+        }
+
+
+        >.affi-form {
+
+
+            >.fnamelname {
+
+                width: 250px;
+
+                >.firstName {
+
+                    >.affi-label1 {
+                        position: relative;
+
+                        color: rgba(0, 0, 0, 0.70);
+                        font-size: 14px;
+                        font-family: Poppins;
+                        font-weight: 700;
+                        width: 90px;
+
+                    }
+
+                    >.inputFirst {
+
+                        width: 115px;
+                    }
+                }
+
+                >.lastName {
+                    >.affi-label2 {
+                        position: relative;
+
+                        color: rgba(0, 0, 0, 0.70);
+                        font-size: 14px;
+                        font-family: Poppins;
+                        font-weight: 700;
+                        width: 90px;
+
+                    }
+                    >.inputSecond {
+                        width: 115px;
+                    }  
+                }
+            }
+
+            >.affi-label3 {
+                position: relative;
+                right: 70px;
+            }
+            >.affi-label4 {
+                position: relative;
+                right: 77px;
+            }
+            >.affi-label5 {
+                position: relative;
+                right: 105px;
+            }
+            >.affi-label6 {
+                position: relative;
+                right: 98px;
+            }
+            >input {
+                width: 250px;
+                height: 35px;
+                margin-top: 6px;
+            }
+            .affi-moNumber {
+                display: flex;
+                flex-direction: row;
+                align-items: flex-end;
+                >.affi-countryCode {
+                    width: 60px;
+                    height: 35px;
+                    border: 1px solid rgba(0, 0, 0, 0.50);
+                    margin-top: 6px;
+                }
+                >.affi-mobileNumber {
+                    width: 190px;
+                    height: 35px;
+                    border: 1px solid rgba(0, 0, 0, 0.50);
+                    margin-top: 6px;
+                }
+            }
+            .affi-btn1 {
+                display: flex;
+                width: 175px;
+                height: 35px;
+                align-items: center;
+                justify-content: center;
+                margin-top: 10px;
+            }
+        }
+    }
+}
